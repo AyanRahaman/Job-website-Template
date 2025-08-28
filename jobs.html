@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal Website</title>
+    <!-- ========= BOOTSTRAP CSS LINK ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <!-- ========== FOR LINKING THE CUSTOM CSS ========== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- ========== BOOTSTRAP ICON ========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- ========== NAVBAR START ========== -->
+    <section class="shadow-sm bg-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="#">CareerHub</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <button class="btn btn-warning">Login</button>&nbsp;
+                <button class="btn btn-info">Post a job</button>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- ============ NAVBAR END ============ -->
+
+    <section class="section-3 py-5 bg-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-10">
+            <h2>Find Jobs</h2>
+          </div>
+          <div class="col-6 col-md-2">
+            <div class="align-end">
+              <select
+                name="sort"
+                id="sort"
+                class="form-control"
+                fdprocessedid="1svnl"
+              >
+                <option value="1">Latest</option>
+                <option value="0">Oldest</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col-md-4 col-lg-3 sidebar mb-4">
+            <form action="" name="searchForm" id="searchForm">
+              <div class="card border-0 shadow p-4">
+                <div class="mb-4">
+                  <h2>Keywords</h2>
+                  <input
+                    value=""
+                    type="text"
+                    name="keyword"
+                    id="keyword"
+                    placeholder="Keywords"
+                    class="form-control"
+                    fdprocessedid="e90mwd"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <h2>Location</h2>
+                  <input
+                    value=""
+                    type="text"
+                    name="location"
+                    id="location"
+                    placeholder="Location"
+                    class="form-control"
+                    fdprocessedid="5d001p"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <h2>Category</h2>
+                  <select
+                    name="category"
+                    id="category"
+                    class="form-control"
+                    fdprocessedid="pgzmnr"
+                  >
+                    <option value="">Select a Category</option>
+                    <option value="1">IT</option>
+                    <option value="2">Accounts</option>
+                    <option value="3">Finance</option>
+                    <option value="4">Business</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <h2>Job Type</h2>
+
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      name="job_type"
+                      type="checkbox"
+                      value="1"
+                      id="job-type-1"
+                    />
+                    <label class="form-check-label" for="job-type-1"
+                      >Full Time</label
+                    >
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      name="job_type"
+                      type="checkbox"
+                      value="2"
+                      id="job-type-2"
+                    />
+                    <label class="form-check-label" for="job-type-2"
+                      >Part Time</label
+                    >
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      name="job_type"
+                      type="checkbox"
+                      value="3"
+                      id="job-type-3"
+                    />
+                    <label class="form-check-label" for="job-type-3"
+                      >Contract</label
+                    >
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      name="job_type"
+                      type="checkbox"
+                      value="4"
+                      id="job-type-4"
+                    />
+                    <label class="form-check-label" for="job-type-4"
+                      >Internship</label
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <h2>Experience</h2>
+                  <select
+                    name="experience"
+                    id="experience"
+                    class="form-control"
+                    fdprocessedid="nfmnb"
+                  >
+                    <option value="">Select Experience</option>
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                    <option value="4">4 Years</option>
+                    <option value="5">5 Years</option>
+                    <option value="6">6 Years</option>
+                    <option value="7">7 Years</option>
+                    <option value="8">8 Years</option>
+                    <option value="9">9 Years</option>
+                    <option value="10">10 Years</option>
+                    <option value="10_plus">10+ Years</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  fdprocessedid="nzgoqf"
+                >
+                  Search
+                </button>
+                <a
+                  href="https://careervibe.liveprojectlab.in/jobs"
+                  class="btn btn-secondary mt-3"
+                  >Reset</a
+                >
+              </div>
+            </form>
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <div class="job_listing_area">
+              <div class="job_lists">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">Skillora</h3>
+
+                        <p>uaua</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">pune</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">20,000</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/43"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">skillora</h3>
+
+                        <p>vffvdcvr</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">pune</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">20,000</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/42"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">skillora</h3>
+
+                        <p>he is the company&amp;nbsp;</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">khamgaon</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">20,000</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/41"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">web developer</h3>
+
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.&amp;nbsp;
+                        </p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">lahore</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">5k</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/40"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">testrrrrrrrrrrr</h3>
+
+                        <p>dummy</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">delhi</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Contract</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">11</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/39"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">
+                          testforsomething
+                        </h3>
+
+                        <p>lorem ipsum dolor sit amet</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">Earth</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">900.000</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/38"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">Flutter Dev</h3>
+
+                        <p>Good200tkHjs</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">Chittagong, Bangladesh</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">50000</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/37"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">trader</h3>
+
+                        <p>n/a</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">karachi</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">10000</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/35"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0 p-3 shadow mb-4">
+                      <div class="card-body">
+                        <h3 class="border-0 fs-5 pb-2 mb-0">Devlop1</h3>
+
+                        <p>loremmmmmmmmmmmmmmmmmmmmm</p>
+
+                        <div class="bg-light p-3 border">
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-map-marker"></i
+                            ></span>
+                            <span class="ps-1">FEZ</span>
+                          </p>
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-clock-o"></i
+                            ></span>
+                            <span class="ps-1">Full Time</span>
+                          </p>
+
+                          <p class="mb-0">
+                            <span class="fw-bolder"
+                              ><i class="fa fa-usd"></i
+                            ></span>
+                            <span class="ps-1">2000</span>
+                          </p>
+                        </div>
+
+                        <div class="d-grid mt-3">
+                          <a
+                            href="https://careervibe.liveprojectlab.in/jobs/detail/31"
+                            class="btn btn-primary btn-lg"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <nav
+                      class="d-flex justify-items-center justify-content-between"
+                    >
+                      <div
+                        class="d-flex justify-content-between flex-fill d-sm-none"
+                      >
+                        <ul class="pagination">
+                          <li class="page-item disabled" aria-disabled="true">
+                            <span class="page-link">« Previous</span>
+                          </li>
+
+                          <li class="page-item">
+                            <a
+                              class="page-link"
+                              href="https://careervibe.liveprojectlab.in/jobs?page=2"
+                              rel="next"
+                              >Next »</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div
+                        class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between"
+                      ></div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== JAVASCRIPT SCRIPT ==========  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
