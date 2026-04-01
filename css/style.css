@@ -454,3 +454,61 @@ section-header .section-title {
     margin-left: 70px;
   }
 }
+
+
+
+/* ========== FOOTER START ========== */
+.footer-section{
+  background:#111;
+  color:#ccc;
+  font-family:'Inter', sans-serif;
+}
+
+.footer-logo{
+  color:#fb246a;
+  font-weight:700;
+}
+
+.footer-title{
+  color:#fff;
+  margin-bottom:15px;
+  font-weight:600;
+}
+
+.footer-text{
+  font-size:14px;
+  line-height:1.7;
+}
+
+.footer-links{
+  list-style:none;
+  padding:0;
+}
+
+.footer-links li{
+  margin-bottom:10px;
+}
+
+.footer-links a{
+  text-decoration:none;
+  color:#bbb;
+  transition:0.3s;
+}
+
+
+
+.footer-divider{
+  border-color:#333;
+  margin:30px 0;
+}
+
+.footer-social a{
+  color:#fff;
+  font-size:18px;
+  margin-right:12px;
+  transition:0.3s;
+}
+
+
+
+/* ========== FOOTER END ========== */
