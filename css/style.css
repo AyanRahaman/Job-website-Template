@@ -41,6 +41,19 @@
   }
 /* ========== NAVBAR END ========== */
 
+/* ========== FOR LOGIN AND REGISTER PAGE BUTTON ========== */
+.login-register-button{
+    background-color: #fb246a;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+  }
+/* ==============================================================   */
+
+
+
 
 /* ========== HERO SECTION START ========= */
 .hero_button{
